@@ -1,6 +1,6 @@
 pragma solidity ^0.5.0;
 
-import "../../zeppelin-solidity/contracts/crowdsale/distribution/FinalizableCrowdsale.sol";
+import "openzeppelin-solidity/contracts/crowdsale/distribution/FinalizableCrowdsale.sol";
 
 /**
  * @title AllocateEther

@@ -1,5 +1,5 @@
 pragma solidity ^0.5.0;
-import "../../zeppelin-solidity/contracts/crowdsale/Crowdsale.sol";
+import "openzeppelin-solidity/contracts/crowdsale/Crowdsale.sol";
 import "./WhitelistedRoleExtended.sol";
 
 

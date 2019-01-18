@@ -1,7 +1,7 @@
 pragma solidity ^0.5.0;
 
 import "./DataManager.sol";
-import "../../zeppelin-solidity/contracts/math/SafeMath.sol";
+import "openzeppelin-solidity/contracts/math/SafeMath.sol";
 
 
 contract SimpleControl is DataManager {

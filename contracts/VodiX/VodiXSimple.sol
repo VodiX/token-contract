@@ -1,8 +1,8 @@
 pragma solidity ^0.5.0;
 
-import "../../zeppelin-solidity/contracts/token/ERC20/ERC20.sol";
-import "../../zeppelin-solidity/contracts/token/ERC20/ERC20Burnable.sol";
-import "../../zeppelin-solidity/contracts/token/ERC20/ERC20Detailed.sol";
+import "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol";
+import "openzeppelin-solidity/contracts/token/ERC20/ERC20Burnable.sol";
+import "openzeppelin-solidity/contracts/token/ERC20/ERC20Detailed.sol";
 
 contract VodiXSimple is ERC20, ERC20Burnable, ERC20Detailed {
 
