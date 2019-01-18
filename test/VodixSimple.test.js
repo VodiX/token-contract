@@ -15,20 +15,16 @@ contract('VodiXSimple', function ([owner, recipient, anotherAccount, ...otherAcc
     const _symbol = 'VDX';
     const _decimals = new BN(18);
   
-    beforeEach(async function () {
-      this.detailedERC20 = await VodiXSimple.new();
-    });
-  
     it('has a name', async function () {
-      (await this.detailedERC20.name()).should.be.equal(_name);
+      (await this.token.name()).should.be.equal(_name);
     });
   
     it('has a symbol', async function () {
-      (await this.detailedERC20.symbol()).should.be.equal(_symbol);
+      (await this.token.symbol()).should.be.equal(_symbol);
     });
   
     it('has an amount of decimals', async function () {
-      (await this.detailedERC20.decimals()).should.be.bignumber.equal(_decimals);
+      (await this.token.decimals()).should.be.bignumber.equal(_decimals);
     });
   });
 
