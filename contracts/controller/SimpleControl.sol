@@ -50,13 +50,13 @@ contract SimpleControl is DataManager {
         return true;
     }
 
-    function increaseAllowance(address owner, address spender, uint256 addedValue) public returns (uint256) {
+    function increaseAllowance(address owner, address spender, uint256 addedValue) public onlyToken returns (uint256) {
         uint256 allowed = allowance(owner, spender).add(addedValue);
         _approve(owner, spender, allowed);
         return allowed;
     }
     
-    function decreaseAllowance(address owner, address spender, uint256 subtractedValue) public returns (uint256) {
+    function decreaseAllowance(address owner, address spender, uint256 subtractedValue) public onlyToken returns (uint256) {
         uint256 allowed = allowance(owner, spender).sub(subtractedValue);
         _approve(owner, spender, allowed);
         return allowed;
